@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tic tac toe</title>
+    <style>
+
+body{
+    text-align: center;
+    background-color: aquamarine;
+}
+.container{
+
+    height: 70vh;
+   
+    display: flex;
+    justify-content: center;
+}
+
+.box{
+    width: 18vmin;
+    height: 18vmin;
+    border: solid black;
+    border-radius: 1rem;
+    font-size: 8vmin;
+    color: black;
+}
+.game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5%;
+    height: 60vmin;
+    width: 60vmin;
+   
+}
+
+#restart{
+    width:7rem;
+    height: 3rem;
+    background-color: bisque;
+    color: rgb(55, 0, 219);
+    border: 1px solid black;
+    border-radius: 3px;
+    font-size: 15px;
+   
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#new{
+    width:7rem;
+    height: 3rem;
+    background-color: bisque;
+    color: rgb(55, 0, 219);
+    border: 1px solid black;
+    border-radius: 3px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+}
+
+.msg-container{
+    height:100vh;
+    gap: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#msg{
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+
+    font-family:Arial, Helvetica, sans-serif;
+   
+}
+
+.hide{
+ display: none;
+}
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="msg-container hide">
+            <p id="msg">Winner</p>
+            <button id="new"><b>NEW GAME!</button></b>
+        </div>
+        <h1>Tic Tac Toe</h1>
+        <div class="container">
+            <div class="game">
+                <button class="box"></button>
+                <button  class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                
+            </div>
+        </div>
+<button id="restart"><b>RESTART!</button></b>
+
+
+    </main>
+    
+    <script src="js.js"></script>
+</body>
+</html>
